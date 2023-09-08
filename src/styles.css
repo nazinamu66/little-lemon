@@ -1,0 +1,52 @@
+/* styles.css */
+.navigation {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Add this to space items horizontally */
+    align-items: center;
+    position: relative;
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    background-color: #F4CE14;
+    color: black;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+  }
+  .hamburger {
+    display: none;
+  }
+  
+  .links {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    align-items: center; /* Vertically center links within the nav */
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 30px;
+  }
+  .nav.open.links{
+    display: block;
+}
+
+  @media (max-width: 768px) {
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        margin-right: 30px;
+    }
+
+    .links{
+        display: none;
+    }
+   
+  }
+  .open .links {
+    display: block;
+}
+  .logo {
+    /* Add any styling for the logo here */
+  }
+  
