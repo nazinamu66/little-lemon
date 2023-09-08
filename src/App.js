@@ -4,6 +4,7 @@ import'./styles.css'
 import Header from './Header';
 import Main from './Main'
 import Footer from './Footer';
+import Specials from './Specials';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <>
       <Header /> 
       <Main />
+      <Specials/>
       <Footer /> 
    </>
   );

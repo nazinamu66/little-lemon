@@ -25,7 +25,7 @@
   .links a {
     text-decoration: none;
     color: #333;
-    margin-right: 30px;
+    margin-right: 40px;
   }
   .nav.open.links{
     display: block;
@@ -48,5 +48,77 @@
 }
   .logo {
     /* Add any styling for the logo here */
+    padding-left: 40px;
+  }
+
+.main-container {
+    display: grid;
+    margin-top: 80px;
+    grid-template-columns: repeat(12, 1fr); /* Create a 12-column grid */
+    grid-gap: 30px; /* Add a gap between columns */
+    align-items: center; /* Vertically align content */
+    justify-content: center; /* Horizontally center content */
   }
   
+  .main-text {
+    grid-column: 2 / span 5; /* Text takes columns 2 to 6 */
+    flex: 1; /* Allow text to grow and fill available space */
+    margin-top: -50px; /* Move the text up by 30px */
+  }
+  
+  .main-image {
+    grid-column: 7 / -1; /* Space between text and image takes remaining columns */
+    width: 400px; /* Set a fixed width for the image container */
+    padding: 20px; /* Add padding to contain the border around the image */
+    border: 10px solid blue; /* Add a blue border to the image */
+    box-sizing: content-box; /* Ensure padding is included within the width */
+    margin-left: 50px; /* Move the image to the right by 50px */
+  }
+  
+  .main-image img {
+    max-width: 100%; /* Allow the image to resize within its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+.reserve-button {
+    background-color: #14532d; /* Dark green background color */
+    color: white; /* White text color */
+    border: none; /* Remove default button border */
+    border-radius: 20px; /* Rounded edges */
+    padding: 10px 20px; /* Add padding for better appearance */
+    cursor: pointer; /* Add a pointer cursor */
+    font-size: 16px; /* Adjust the font size as needed */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }  
+  .reserve-button:hover {
+    background-color: #0e3c20; /* Darker green color on hover */
+  }
+
+  .specials-button {
+    grid-column: 9 /span 2;
+    background-color: #14532d; /* Dark green background color */
+    color: white; /* White text color */
+    border: none; /* Remove default button border */
+    border-radius: 20px; /* Rounded edges */
+    padding: 10px 20px; /* Add padding for better appearance */
+    cursor: pointer; /* Add a pointer cursor */
+    font-size: 16px; /* Adjust the font size as needed */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }  
+  specials-button:hover {
+    background-color: #0e3c20; /* Darker green color on hover */
+  }
+
+  .specials-container {
+    display: grid;
+    margin-top: 80px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+  }
+  
+  .specials{
+    grid-column: 2 /span 6;
+  }
+  
+
+
