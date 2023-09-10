@@ -6,6 +6,7 @@ import Main from './Main'
 import Footer from './Footer';
 import Specials from './Specials';
 import Testimonials from './Testimonials';
+import About from './About';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Main />
       <Specials/>
       <Testimonials/>
+      <About/>
       <Footer /> 
    </>
   );

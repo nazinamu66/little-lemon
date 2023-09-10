@@ -14,14 +14,12 @@
   .hamburger {
     display: none;
   }
-  
   .links {
     list-style: none; /* Remove default list styles */
     padding: 0; /* Remove default padding */
     display: flex;
     align-items: center; /* Vertically center links within the nav */
   }
-  
   .links a {
     text-decoration: none;
     color: #333;
@@ -30,7 +28,6 @@
   .nav.open.links{
     display: block;
 }
-
   @media (max-width: 768px) {
     .hamburger{
         display: block;
@@ -41,7 +38,6 @@
     .links{
         display: none;
     }
-   
   }
   .open .links {
     display: block;
@@ -50,7 +46,6 @@
     /* Add any styling for the logo here */
     padding-left: 40px;
   }
-
 .main-container {
     display: grid;
     margin-top: 80px;
@@ -59,13 +54,11 @@
     align-items: center; /* Vertically align content */
     justify-content: center; /* Horizontally center content */
   }
-  
   .main-text {
     grid-column: 2 / span 5; /* Text takes columns 2 to 6 */
     flex: 1; /* Allow text to grow and fill available space */
     margin-top: -50px; /* Move the text up by 30px */
   }
-  
   .main-image {
     grid-column: 7 / -1; /* Space between text and image takes remaining columns */
     width: 400px; /* Set a fixed width for the image container */
@@ -74,7 +67,6 @@
     box-sizing: content-box; /* Ensure padding is included within the width */
     margin-left: 50px; /* Move the image to the right by 50px */
   }
-  
   .main-image img {
     max-width: 100%; /* Allow the image to resize within its container */
     height: auto; /* Maintain aspect ratio */
@@ -88,11 +80,10 @@
     cursor: pointer; /* Add a pointer cursor */
     font-size: 16px; /* Adjust the font size as needed */
     transition: background-color 0.3s ease; /* Smooth transition for background color */
-  }  
+  }
   .reserve-button:hover {
     background-color: #0e3c20; /* Darker green color on hover */
   }
-
   .specials-button {
     grid-column: 9 /span 2;
     background-color: #14532d; /* Dark green background color */
@@ -103,11 +94,10 @@
     cursor: pointer; /* Add a pointer cursor */
     font-size: 16px; /* Adjust the font size as needed */
     transition: background-color 0.3s ease; /* Smooth transition for background color */
-  }  
+  }
   specials-button:hover {
     background-color: #0e3c20; /* Darker green color on hover */
   }
-
   .specials-container {
     display: grid;
     margin-top: 80px;
@@ -115,34 +105,28 @@
     grid-gap: 30px;
     align-items: center;
   }
-  
   .specials{
     grid-column: 2 /span 6;
   }
-  
   .cards-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
     grid-gap: 20px; /* Adjust the gap between cards */
     grid-column: 2 / span 9; /* Cards take columns 3 to 10 */
   }
-  
   .card {
     background-color: #f8f8f8;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
   }
-  
   .card img {
     max-width: 100%;
     height: auto;
   }
-  
   .motorcycle-icon {
     /* Add styles for the motorcycle icon here */
   }
-
   .testimonials-container {
     text-align: center;
     padding: 60px 0;
@@ -150,41 +134,34 @@
     grid-template-columns: repeat(12, 1fr); /* Create a 12-column grid */
     grid-gap: 20px; /* Add a gap between grid items */
   }
-  
   .testimonials-title {
     grid-column: 6 /span 1;
     font-size: 28px;
     margin-bottom: 20px;
   }
-  
   .testimonial-cards {
     grid-column: 2 /span 9;
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Create a grid with 4 columns */
     gap: 20px; /* Add a gap between testimonial cards */
     justify-content: space-around; /* Center the cards horizontally */
-    
   }
-  
   .testimonial-card {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  
   .testimonial-image {
     width: 80px; /* Adjust the image size as needed */
     height: 80px;
     border-radius: 50%; /* Make the image round */
     margin-bottom: 10px;
   }
-  
   .testimonial-info h4 {
     font-size: 18px;
-    margin: 0;
+    margin: 20px;
   }
-  
   .testimonial-info p {
     font-size: 14px;
     margin: 0;
