@@ -7,8 +7,10 @@ import './styles.css'
 function Specials() {
   return (
     <div className='specials-container'>
+      <div className='specials-header'>
       <h2 className='specials'>Specials</h2>
       <button className='specials-button'>Online Menu</button>
+      </div>
       <div className='cards-container'>
         <div className='card'>
           <img src= {salad} alt='greek-salad' />

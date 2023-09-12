@@ -36,9 +36,9 @@ function Testimonials() {
     </div>
 
         {/* Repeat the structure for the other testimonial cards */}
-      
-    
-       
+
+
+
     </>
   )
 }

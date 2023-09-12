@@ -1,6 +1,7 @@
 import React, { useState} from 'react'
 import ham from './assets/images/hamburger.svg'
 import './styles.css'
+import { Routes, Route } from 'react-router-dom';
 
 
 function Nav() {
@@ -9,8 +10,7 @@ function Nav() {
     const toggleNav = () => {
         console.log('Toggle Clicked');
         SetIsNavOpen(!isNavOpen)
-    }; 
-
+    };
   return (
     <nav className={`nav ${isNavOpen ? 'open' : ''}`}>
         <div>
