@@ -5,7 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 
 
 function Nav() {
-    const [isNavOpen, SetIsNavOpen] = useState(false); // create a variable called isNavOpen useState Hook to toggle links on mobile
+    const [isNavOpen, SetIsNavOpen] = useState(false); // supoose tocreate a variable called isNavOpen useState Hook to toggle links on mobile
 
     const toggleNav = () => {
         console.log('Toggle Clicked');
